@@ -1,0 +1,34 @@
+/* Put your CSS here */
+div.main-content {
+    margin-top: 8em;
+}
+div.navbar-inner * h2 {
+    color: #FFFFFF;
+}
+
+li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+li a.active {
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+    background-color: #08c;
+}
+li a:hover {
+    color: #005580;
+}
+
+.nav-list {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+div.book-thumb {
+    vertical-align: top;
+    width: 75px;
+    display: inline-block;
+    text-align: center;
+    overflow: auto;
+}
