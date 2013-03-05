@@ -3,14 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b6d85539-a06a-4108-a2d0-4ed0fae878a4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nebraskajs-intro-to-ember.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="b6d85539-a06a-4108-a2d0-4ed0fae878a4" time="1362486490043" ignored="false" />
-    <file path="$USER_HOME$/Dropbox/projects/emberjs-talk/atlassian-ide-plugin.xml" changelist="b6d85539-a06a-4108-a2d0-4ed0fae878a4" time="1362486672912" ignored="false" />
-    <file path="/app.js" changelist="b6d85539-a06a-4108-a2d0-4ed0fae878a4" time="1362485994746" ignored="false" />
+    <file path="$USER_HOME$/Dropbox/projects/emberjs-talk/atlassian-ide-plugin.xml" changelist="b6d85539-a06a-4108-a2d0-4ed0fae878a4" time="1362487160306" ignored="false" />
+    <file path="/app.js" changelist="b6d85539-a06a-4108-a2d0-4ed0fae878a4" time="1362487174593" ignored="false" />
+    <file path="$USER_HOME$/Dropbox/projects/emberjs-talk/js/app3.js" changelist="b6d85539-a06a-4108-a2d0-4ed0fae878a4" time="1362486986367" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="b6d85539-a06a-4108-a2d0-4ed0fae878a4" time="1362487177945" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="8" selection-start="1147" selection-end="1147" vertical-scroll-proportion="-25.0">
+            <state line="40" column="21" selection-start="1160" selection-end="1160" vertical-scroll-proportion="-10.0">
               <folding />
             </state>
           </provider>
@@ -81,7 +81,7 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="48" selection-start="213" selection-end="213" vertical-scroll-proportion="-1.4528302">
+            <state line="31" column="24" selection-start="730" selection-end="730" vertical-scroll-proportion="0.21487603">
               <folding>
                 <element signature="e#770#842#0" expanded="false" />
                 <element signature="e#888#954#0" expanded="false" />
@@ -108,8 +108,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/app.js" />
       </list>
     </option>
   </component>
@@ -276,7 +276,7 @@
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33023873" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33023873" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -377,14 +377,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="8" selection-start="1147" selection-end="1147" vertical-scroll-proportion="-25.0">
+        <state line="40" column="21" selection-start="1160" selection-end="1160" vertical-scroll-proportion="-10.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="48" selection-start="213" selection-end="213" vertical-scroll-proportion="-1.4528302">
+        <state line="31" column="24" selection-start="730" selection-end="730" vertical-scroll-proportion="0.21487603">
           <folding>
             <element signature="e#770#842#0" expanded="false" />
             <element signature="e#888#954#0" expanded="false" />
