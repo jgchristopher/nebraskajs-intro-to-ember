@@ -1,1 +1,113 @@
-PlaceHolder
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8/>
+    <title>Book Collection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <h2>Books</h2>
+        </div>
+    </div>
+</div>
+<div class="main-content container-fluid">
+    <div class="row-fluid">
+
+        <script type="text/x-handlebars">
+            {{outlet}}
+        </script>
+
+        <script type="text/x-handlebars" data-template-name="shelves">
+            <div class="span3">
+                <div class="well">
+                    <h3>Shelves</h3>
+                    <ul class="nav nav-list">
+                        {{#each shelf in controller}}
+                        <li>{{#linkTo "shelf" shelf}}{{shelf.category}}{{/linkTo}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+            <div class="span9">
+                {{outlet}}
+            </div>
+        </script>
+
+        <script type="text/x-handlebars" data-template-name="shelves/index">
+            &crarr; Select a Category
+        </script>
+
+        <script type="text/x-handlebars" data-template-name="shelf">
+                {{ partial shelfListOfBooks }}
+        </script>
+
+        <script type="text/x-handlebars" data-template-name="shelf/index">
+            <span>
+                Select A Book &uarr;
+            </span>
+        </script>
+
+        <script type="text/x-handlebars" data-template-name="book">
+            <h3>{{title}}</h3>
+            <div class="row-fluid">
+                <div class="span6">
+                    <img {{ bindAttr src="imageUrl" }}>
+                </div>
+                <div class="span6">
+                    <ul>
+                        <li>{{ author }}</li>
+                        <li>Read: {{view Ember.Checkbox checkedBinding="read"}}</li>
+                        <li>Like: {{view Ember.Checkbox checkedBinding="like"}}</li>
+                    </ul>
+
+                </div>
+            </div>
+        </script>
+
+        <script type="text/x-handlebars" data-template-name="_shelfListOfBooks">
+            <h3>Shelf: {{category}}</h3>
+            {{#each book in controller.books}}
+                <div class="book-thumb">{{#linkTo "book" book}}
+                        <img {{ bindAttr src="book.thumbUrl" }}>
+                        <div>{{book.shortTitle}}</div>
+                        {{/linkTo}}
+                </div>
+            {{else}}
+                None
+            {{/each}}
+        </script>
+
+        <script type="text/x-handlebars" data-template-name="shelfListLayout">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="well">
+                        {{ yield }}
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="well" style="background-color: transparent !important;">
+                        <div id="book-contents">
+                            {{outlet}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
+    </div>
+</div>
+<script src="./js/libs/jquery-1.9.1.js"></script>
+<script src="./js/libs/handlebars-1.0.0-rc.3.js"></script>
+<script src="./js/libs/ember-1.0.0-rc.1.js"></script>
+<script src="./js/libs/ember-data.js"></script>
+<script src="./js/libs/bootstrap.min.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
