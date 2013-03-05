@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
 <script type="text/x-handlebars">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
@@ -31,21 +32,37 @@
 <script type="text/x-handlebars" data-template-name="shelves">
     <h1>Shelves</h1>
     {{#each shelf in controller}}
-        {{#linkTo "shelf" shelf}}{{shelf.category}}{{/linkTo}}<br/>
+    {{#linkTo "shelf" shelf}}{{shelf.category}}{{/linkTo}}<br/>
     {{/each}}
 </script>
 
 <script type="text/x-handlebars" data-template-name="shelf">
-    <h1>Shelf: {{category}}</h1>
-    {{#each book in books}}
-        {{#linkTo "book" book}}{{book.title}}{{/linkTo}}<br/>
-    {{/each}}
+    <div class="container-fluid">
+        <div class="row-fluid">
+            {{#linkTo "shelves"}}Shelves{{/linkTo}} > {{category}}
+        </div>
+        <div class="row-fluid">
+            <h1>Shelf: {{category}}</h1>
+            {{#each book in books}}
+            {{#linkTo "book" book}}{{book.title}}{{/linkTo}}<br/>
+            {{/each}}
+        </div>
+    </div>
+
 </script>
 
 <script type="text/x-handlebars" data-template-name="book">
-    <h1>{{title}}</h1>
-    <img {{ bindAttr src="imageUrl" }}>
-    <span>Author: {{author}}</span>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            {{#linkTo "shelves"}}Shelves{{/linkTo}} > {{#linkTo "shelf" shelf}} {{shelf.category}} {{/linkTo}} >
+            {{title}}
+        </div>
+        <div class="row-fluid">
+            <h1>{{title}}</h1>
+            <img {{ bindAttr src="imageUrl" }}>
+            <span>Author: {{author}}</span>
+        </div>
+    </div>
 </script>
 
 <script src="./js/libs/jquery-1.9.1.js"></script>

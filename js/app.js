@@ -6,6 +6,12 @@ App.Router.map(function () {
     this.route("book", {path:"/book/:book_id"});
 });
 
+App.IndexRoute = Ember.Route.extend({
+    redirect: function() {
+        this.transitionTo('shelves');
+    }
+})
+
 App.ShelvesRoute = Ember.Route.extend({
     model: function () {
         return App.Shelf.find();
@@ -29,7 +35,7 @@ App.Book = DS.Model.extend({
     image: DS.attr('string'),
     read: DS.attr('boolean'),
     like: DS.attr('boolean'),
-    shelves: DS.hasMany('App.Shelf'),
+    shelf: DS.belongsTo('App.Shelf'),
     thumbUrl: function () {
         return "./img/books/" + this.get('image') + '-thumb.png'
     }.property('image'),
@@ -58,7 +64,7 @@ App.Book.FIXTURES = [
         author: 'Joachim Haagen Skeie',
         image: 'ember-js-in-action',
         read: false,
-        like: true,
+        like: false,
         shelf: 1
     },
     {
