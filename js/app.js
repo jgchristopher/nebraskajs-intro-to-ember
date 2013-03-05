@@ -3,6 +3,7 @@ App = Ember.Application.create({});
 App.Router.map(function () {
     this.route("shelves", {path: "/shelves"});
     this.route("shelf", {path:"/shelf/:shelf_id"});
+    this.route("book", {path:"/book/:book_id"});
 });
 
 App.ShelvesRoute = Ember.Route.extend({

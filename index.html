@@ -38,8 +38,14 @@
 <script type="text/x-handlebars" data-template-name="shelf">
     <h1>Shelf: {{category}}</h1>
     {{#each book in books}}
-    {{book.title}}<br/>
+        {{#linkTo "book" book}}{{book.title}}{{/linkTo}}<br/>
     {{/each}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="book">
+    <h1>{{title}}</h1>
+    <img {{ bindAttr src="imageUrl" }}>
+    <span>Author: {{author}}</span>
 </script>
 
 <script src="./js/libs/jquery-1.9.1.js"></script>
