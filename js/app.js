@@ -27,7 +27,7 @@ App.Book = DS.Model.extend({
     image: DS.attr('string'),
     read: DS.attr('boolean'),
     like: DS.attr('boolean'),
-    shelves: DS.hasMany('App.Shelf'),
+    shelf: DS.belongsTo('App.Shelf'),
     thumbUrl: function () {
         return "./img/books/" + this.get('image') + '-thumb.png'
     }.property('image'),
