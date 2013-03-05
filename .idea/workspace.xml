@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6d85539-a06a-4108-a2d0-4ed0fae878a4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atlassian-ide-plugin.xml" afterPath="$PROJECT_DIR$/atlassian-ide-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nebraskajs-intro-to-ember.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="b6d85539-a06a-4108-a2d0-4ed0fae878a4" time="1362486140043" ignored="false" />
-    <file path="$USER_HOME$/Dropbox/projects/emberjs-talk/atlassian-ide-plugin.xml" changelist="b6d85539-a06a-4108-a2d0-4ed0fae878a4" time="1362486098608" ignored="false" />
+    <file path="$USER_HOME$/Dropbox/projects/emberjs-talk/atlassian-ide-plugin.xml" changelist="b6d85539-a06a-4108-a2d0-4ed0fae878a4" time="1362486455456" ignored="false" />
     <file path="/app.js" changelist="b6d85539-a06a-4108-a2d0-4ed0fae878a4" time="1362485994746" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,22 +69,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="21" selection-start="1264" selection-end="1264" vertical-scroll-proportion="-24.333334">
+            <state line="33" column="8" selection-start="932" selection-end="932" vertical-scroll-proportion="0.99117">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="16" selection-start="1707" selection-end="1707" vertical-scroll-proportion="2.2955976">
+            <state line="9" column="39" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#669#741#0" expanded="false" />
-                <element signature="e#787#853#0" expanded="false" />
+                <element signature="e#721#793#0" expanded="false" />
+                <element signature="e#839#905#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -107,8 +108,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -209,6 +210,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -362,20 +370,20 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="21" selection-start="1264" selection-end="1264" vertical-scroll-proportion="-24.333334">
-          <folding />
+        <state line="9" column="39" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#721#793#0" expanded="false" />
+            <element signature="e#839#905#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="16" selection-start="1707" selection-end="1707" vertical-scroll-proportion="2.2955976">
-          <folding>
-            <element signature="e#669#741#0" expanded="false" />
-            <element signature="e#787#853#0" expanded="false" />
-          </folding>
+        <state line="33" column="8" selection-start="932" selection-end="932" vertical-scroll-proportion="0.99117">
+          <folding />
         </state>
       </provider>
     </entry>

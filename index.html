@@ -31,7 +31,14 @@
 <script type="text/x-handlebars" data-template-name="shelves">
     <h1>Shelves</h1>
     {{#each shelf in controller}}
-        {{shelf.category}}<br/>
+        {{#linkTo "shelf" shelf}}{{shelf.category}}{{/linkTo}}<br/>
+    {{/each}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="shelf">
+    <h1>Shelf: {{category}}</h1>
+    {{#each book in books}}
+    {{book.title}}<br/>
     {{/each}}
 </script>
 
