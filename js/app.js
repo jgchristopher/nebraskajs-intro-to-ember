@@ -45,6 +45,17 @@ App.ShelfView = Ember.View.extend({
     templateName: 'shelf'
 });
 
+
+// Handlebars Helpers
+Ember.Handlebars.registerBoundHelper('shorten', function (value) {
+    if (value && typeof value === 'string') {
+        if (value.length > 30) {
+            value = value.substr(0, 30) + " ...";
+        }
+    }
+    return value;
+});
+
 // Models
 App.Store = DS.Store.extend({
     revision: 11,
@@ -76,16 +87,7 @@ App.Book = DS.Model.extend({
             image = "./img/books/" + this.get('image') + '.png';
         }
         return image;
-    }.property('image'),
-    shortTitle: function () {
-        var title = this.get('title');
-        if (title) {
-            if (title.length > 30) {
-                title = title.substr(0, 30) + " ...";
-            }
-        }
-        return title;
-    }.property('title')
+    }.property('image')
 });
 
 App.Shelf.FIXTURES = [

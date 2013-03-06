@@ -75,7 +75,7 @@
             {{#each book in controller.books}}
                 <div class="book-thumb">{{#linkTo "book" book}}
                         <img {{ bindAttr src="book.thumbUrl" }}>
-                        <div>{{book.shortTitle}}</div>
+                        <div>{{shorten book.title}}</div>
                         {{/linkTo}}
                 </div>
             {{else}}
